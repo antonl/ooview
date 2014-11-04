@@ -1,7 +1,6 @@
-#ifndef MAIN_WINDOW_H
-#define MAIN_WINDOW_H
+#ifndef OOVIEW_H_XAC 
+#define OOVIEW_H_XAC
 
-#include <memory>
 #include "ui_ooview.h"
 
 // Forward declare main window

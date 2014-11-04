@@ -1,9 +1,9 @@
 #include <QApplication>
-#include "ooview.h"
+#include "ooview_controller.h"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    OOView w;
-    w.show();
+    OOViewController control;
+    control.start();
     return app.exec();
 }

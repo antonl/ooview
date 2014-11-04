@@ -8,6 +8,7 @@ set(PROJECT_VERSION "0.1")
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 
+find_package(Qt5Core REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5PrintSupport REQUIRED) # required for QCustomPlot
 
@@ -39,6 +40,7 @@ add_executable(${CMAKE_PROJECT_NAME} WIN32
 )
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
+    Qt5::Core
     Qt5::Widgets
     Qt5::PrintSupport
 )
