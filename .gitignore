@@ -22,7 +22,14 @@
 *.a
 *.lib
 
+# Build directory
+build/
+
 # Executables
 *.exe
 *.out
 *.app
+
+# Vim
+*.un~
+
