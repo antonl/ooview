@@ -4,6 +4,7 @@
 #include <memory>
 #include <QStateMachine>
 #include <QThread>
+#include <QObject>
 #include "spectrometer.h"
 #include "ooview.h"
 
@@ -12,10 +13,10 @@ class OOViewController : public QStateMachine {
 
     public:
         explicit OOViewController(QObject *parent = 0);
-        ~OOViewController();
+        ~OOViewController() = default;
 
     public slots:
-        void start() override;
+        void start();
 
     private:
         void setup_states();
