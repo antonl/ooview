@@ -15,13 +15,10 @@ class OOViewController : public QStateMachine {
         explicit OOViewController(QObject *parent = 0);
         ~OOViewController() = default;
 
-    public slots:
-        void start();
-
     private:
-        void setup_states();
-        void make_spectrometer();
-        void setup_ooview();
+        inline void setup_states();
+        inline void make_spectrometer();
+        inline void setup_ooview();
 
         Spectrometer m_spec;
         OOView m_ooview;
